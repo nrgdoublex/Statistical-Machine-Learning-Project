@@ -1,0 +1,13 @@
+RK	Player	Team	Pos	G	AB	R	H	2B	3B	HR	RBI	BB	SO	SB	CS	AVG▼	OBP	SLG	OPS
+942	 Warren, A	NYY	P	6	0	0	0	0	0	0	0	0	0	0	0	-	-	-	.000
+942	 Webb, D	CWS	P	3	0	0	0	0	0	0	0	0	0	0	0	-	-	-	.000
+942	 Webb, R	BAL	P	4	0	0	0	0	0	0	0	0	0	0	0	-	-	-	.000
+942	 Whelan, K	OAK	P	1	0	0	0	0	0	0	0	0	0	0	0	-	-	-	.000
+942	 Wilhelmsen, T	SEA	P	5	0	0	0	0	0	0	0	0	0	0	0	-	-	-	.000
+942	 Wilson, A	BOS	P	2	0	0	0	0	0	0	0	0	0	0	0	-	-	-	.000
+942	 Wilson, B	LAD	P	58	0	0	0	0	0	0	0	0	0	0	0	-	-	-	.000
+942	 Withrow, C	LAD	P	19	0	0	0	0	0	0	0	0	0	0	0	-	-	-	.000
+942	 Wooten, R	MIL	P	37	0	0	0	0	0	0	0	0	0	0	0	-	-	-	.000
+942	 Wright, S	BOS	P	1	0	0	0	0	0	0	0	0	0	0	0	-	-	-	.000
+942	 Wright, W	CHC	P	53	0	0	0	0	0	0	0	0	0	0	0	-	-	-	.000
+942	 Yates, K	TB	P	3	0	0	0	0	0	0	0	0	0	0	0	-	-	-	.000
