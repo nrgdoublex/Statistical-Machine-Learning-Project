@@ -14,25 +14,26 @@ def match_player_salary(player,salary):
 
 
 def clear_rawdata(year,test):
-    out_file = open(year + "/"+ year + "stats.txt",'w')
+    out_file = open("../" + year + "/"+ year + "stats.txt",'w')
     
     #read 2016 stats
     for i in range(0,25):
-        file = year + "/stat" + str(i+1) + ".txt"
+        file = "../" + year + "/stat" + str(i+1) + ".txt"
         with open(file) as f:
             content = f.readlines()
             for line in range(1,len(content)):
                 stat = content[line].rstrip('\n').split('\t')
                 if stat[3] != 'P' or stat[0]=='RK':
                     for idx in range(1,len(stat)):
-                        out_file.write("%s\t" %stat[idx])
+                        if idx != len(stat) - 1:out_file.write("%s\t" %stat[idx])
+                        else:out_file.write("%s" %stat[idx])
                     out_file.write('\n')
                     
     out_file.close()
     
     #read 2015 salaries
-    out_file = open(year + "/" + year + "salaries.txt",'w')
-    in_file = open(year + "/salary.txt")
+    out_file = open("../" + year + "/" + year + "salaries.txt",'w')
+    in_file = open("../" + year + "/salary.txt")
     lines = in_file.readlines()
     idx = 1
     while idx < len(lines):
@@ -52,9 +53,9 @@ def clear_rawdata(year,test):
     out_file.close()  
     
     #match player and salary
-    player = open(year + "/" + year + "stats.txt")
-    salary = open(year + "/" + year + "salaries.txt")
-    total = open(year + "/" + year + ".txt",'w')
+    player = open("../" + year + "/" + year + "stats.txt")
+    salary = open("../" + year + "/" + year + "salaries.txt")
+    total = open("../" + year + "/" + year + ".txt",'w')
     player_lines = player.readlines()
     salary_lines = salary.readlines()
     player_matrix = []
@@ -75,7 +76,7 @@ def clear_rawdata(year,test):
                 total.write('\n')
 
 def extract_data(year,output):
-    rawdata = open(year + "/" + year + ".txt")
+    rawdata = open("../" + year + "/" + year + ".txt")
     for lines in rawdata:
         list = lines.rstrip('\n\t').split('\t')
         for idx in range(3,len(list)):
